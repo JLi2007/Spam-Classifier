@@ -7,7 +7,6 @@ from nltk.stem.porter import PorterStemmer
 
 ps = PorterStemmer()
 
-
 def transform_text(text):
     text = text.lower()
     text = nltk.word_tokenize(text)
@@ -42,7 +41,7 @@ st.write("based off [this dataset](%s)" % url)
 input_sms = st.text_area("Enter the message")
 
 if st.button('Predict'):
-
+    
     # 1. preprocess
     transformed_sms = transform_text(input_sms)
     # 2. vectorize
