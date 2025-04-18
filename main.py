@@ -120,9 +120,11 @@ plt.show()
 
 # Data is imbalanced
 import nltk
-nltk.download('punkt_tab')
-nltk.download('stopwords')
+nltk.download('punkt_tab', download_dir="nltk_data")
+nltk.download('stopwords', download_dir="nltk_data")
 
+# tells code to look in nltk_folder directory for nltk data
+nltk.data.path.append('nltk_data')
 
 # In[20]:
 
@@ -630,3 +632,4 @@ pickle.dump(mnb,open('model.pkl','wb'))
 # for msg in df[df['target'] == 1]['transformed_text'].tolist():
 #     print(msg)
 
+print("script finished")
