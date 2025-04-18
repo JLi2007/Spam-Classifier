@@ -120,7 +120,7 @@ plt.show()
 
 # Data is imbalanced
 import nltk
-nltk.download('punkt_tab', download_dir="nltk_data")
+nltk.download('punkt', download_dir="nltk_data")
 nltk.download('stopwords', download_dir="nltk_data")
 
 # tells code to look in nltk_folder directory for nltk data
