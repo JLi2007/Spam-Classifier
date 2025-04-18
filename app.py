@@ -54,4 +54,4 @@ if st.button('Predict'):
     else:
         st.header("Not Spam")
         
-st.text("uses the MultinomialNB model (tested to be the most accrate % precise)")
+st.text("uses the MultinomialNB model (tested to be the most accurate & precise)")
