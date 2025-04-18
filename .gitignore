@@ -3,3 +3,4 @@ venv
 .streamlit
 vectorizer.pkl
 model.pkl
+.DS_Store
